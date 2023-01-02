@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "tictactoe"
+version = "0.1.0"
+description = "Noughts and crosses"
+authors = ["WizzyGeek <ojasscoding@gmail.com>"]
+license = "MIT"
+
+packages = [
+    {include = "tttxo", from="src"},
+]
+
+[tool.poetry.scripts]
+tttxo = "tttxo.__main__:main"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^1.24.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
